@@ -197,7 +197,18 @@
               with the argument 'divide' when the button is clicked.
             - "Divide": The text displayed on the button.
         -->
-        
+        <button onclick="calculate('power')">Power</button>
+<!--
+    <button> Element: Power Button
+    
+    - onclick="calculate('power')": Calls the JavaScript function "calculate"
+      with the argument 'power' when clicked.
+    - "Power": The text displayed on the button.
+    
+    This button sends a POST request to the "/power" endpoint
+    and returns the result of raising 'a' to the power of 'b'.
+-->
+
         <div class="result" id="result"></div>
         <!--
             <div> Element: Result Display
@@ -287,7 +298,7 @@
                           
                         - resultElement.innerText: Updates the text inside the result <div> to display the result.
                     */
-                    resultElement.innerText = 'Calculation Result: ' + data.result;
+                    resultElement.innerText = 'Result: ' + data.result;
                 } else {
                     /*
                         Error Response Handling
